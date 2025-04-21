@@ -1,0 +1,733 @@
+@font-face{
+	font-family: '8 BIT WONDER';
+	src: url("../fonts/8-BIT WONDER.woff") format('woff');
+}
+
+@font-face{
+	font-family: 'Minecraft';
+	src: url("../fonts/Minecraft.woff") format('woff');
+}
+
+@font-face{
+	font-family: 'Minecraft Font';
+	src: url("../fonts/minecraft_font.woff") format('woff');
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb{
+      background: rgba(126, 126, 126, 0.5);
+      transition: all .4s;
+  }
+  
+  *::-webkit-scrollbar-track {
+      background: transparent;
+    }
+  
+  *::-webkit-scrollbar-thumb:hover{
+      background: rgba(126, 126, 126, 0.8)
+  }
+
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden;
+}
+
+.background-color{
+    z-index: -100;
+    background-color: darkred;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 15;
+}
+
+nav ul{
+    width: 100vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: all 300ms ease-in-out;
+    position: relative;
+}
+
+nav ul a{
+    text-decoration: none;
+    display: relative;
+}
+
+nav ul a li{
+    display: relative;
+    list-style: none;
+    padding: 12.5px;
+    font-size: 20px;
+    transition: 300ms;
+    font-family: 'Minecraft Font';
+    font-size: 18px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+nav ul a:last-child li, #shopping-cart-span{
+    position: absolute;
+    right: 0;
+    background-color: #9c000092;
+}
+
+nav ul a li img{
+    width: 30px;
+    border-radius: 10%;
+}
+
+nav ul a li p{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 14px !important;
+}
+
+nav ul a:hover li{
+    background-color: brown;
+    color: white;
+}
+
+.caroulsel-title{
+    position: absolute;
+    min-width: 100%;
+    max-width: 100%;
+    height: fit-content;
+    top: 40%;
+    transform: translate(0, -00%);
+    width: 100%;
+    z-index: 2;
+}
+
+.carousel-logo{
+    min-height: 80px;
+    max-height: 80px;
+}
+
+.carousel-logo img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50vw;
+    animation: espirar linear infinite;
+    animation-duration: 3.5s;
+}
+
+@keyframes espirar{
+    0%{
+        width: 50vw;
+    }
+    50%{
+        width: 53vw;
+    }
+    100%{
+        width: 50vw;
+    }
+}
+
+.carousel-info-panel{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.carousel-players-panel{
+    position: absolute;
+    top: 130px;
+    left: -7.5px;
+    min-width: 125px;
+    min-height: 125px;
+    max-height: 125px;
+    max-width: 125px;
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+    border-radius: 0 1000px 1000px 0;
+    text-align: center;
+    font-family: 'Minecraft Font';
+    padding-top: 5px;
+    border: solid 3px rgba(255, 255, 255, 0.068);
+    z-index: 60;
+}
+
+.carousel-players-panel p{
+    position: relative;
+    left: -5px;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.carousel-players-panel p:first-child{
+    color: greenyellow;
+    font-size: 30px;
+}
+
+.carousel-launcher-panel{
+    position: relative;
+    top: 95px;
+    height: fit-content;
+    width: fit-content;
+    background-color: #181d212b;
+    backdrop-filter: blur(30px);
+    text-align: center;
+    padding: 30px;
+    border-radius: 12px;
+    transition: all 300ms ease-in-out !important;
+    cursor: pointer;
+    border: solid 4px rgba(255, 255, 255, 0.068);
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.carousel-launcher-panel:hover{
+    padding: 35px;
+    filter: invert(1);
+}
+
+.carousel-launcher-panel img{
+    height: 90px;
+}
+
+.carousel-launcher-panel h5{
+    position: relative;
+    top: 30px;
+    color: white;
+}
+
+/**/
+.itemBackground{
+    height: 100vh !important;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-position: center center!important;
+}
+
+.cButton-padding{
+    width: 2.5% !important;
+    z-index: 10 !important;
+}
+
+/**/
+
+.content-container{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.content-container h1, .content-container h3{
+    text-align: center;
+    color: white;
+    font-family: 'Minecraft Font';
+}
+
+.section-items{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.item{
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    min-height: 370px;
+    min-width: 300px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.item-mark-new{
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 70px;
+    height: 70px;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    font-family: 'Minecraft Font';
+}
+
+.item-mark-new p{
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+    font-size: 8px;
+}
+
+.item h3{
+    color: white;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    font-family: 'Minecraft Font';
+}
+
+.item-more-details{
+    position: relative;
+    max-width: 300px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+}
+
+.item-more-details p{
+    font-family: 'Minecraft Font';
+}
+
+.item-more-details button{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #181D21;
+    border-radius: 1000px;
+    border: none;
+    color: white;
+    font-family: 'Minecraft Font';
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: 300ms;
+    font-size: 14px;
+}
+
+.item-more-details button:hover{
+    filter: invert(1);
+}
+
+.item-container-price{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 50px;
+    background-color: rgba(0,0,0,0.5);
+    color: yellowgreen;
+    font-family: 'Minecraft Font';
+    font-size: 28px;
+}
+
+.item-container-footer{
+    position: absolute;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    bottom: 0;
+}
+
+.item-container-footer button{
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    border-radius: 1000px;
+    left: 50%;
+    transform: translate(-50%);
+    border: none;
+    color: black;
+    font-family: 'Minecraft Font';
+}
+
+/**/
+
+.item-4:before, .item-4:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+      #0000ff, #00ff00,#ffff00, #ff0000);
+    /*background: linear-gradient(rgb(61, 254, 254), yellow, rgb(255, 54, 87), rgb(61, 254, 254), yellow, rgb(255, 54, 87));*/
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+    border-radius: 10px 10px 0px 0px;
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.item-4:after {
+    filter: blur(20px);
+}
+
+/* CONTAINER MODAL MODAL MODAL MODAL MODAL */
+
+.container-modal{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 50;
+}
+
+.container-modal .modal-bg{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 51;
+    backdrop-filter: blur(8px);
+}
+
+.container-modal .modal{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90vh;
+    width: 60vw;
+    background-color: #181d21dc;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: row;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.container-modal .modal .modal-part-container{
+    height: 100%;
+}
+
+.mp-part-1{
+    border-right: solid 1px rgba(0, 0, 0, 0.208);
+    overflow-y: scroll;
+    width: 60%;
+}
+
+
+.mp-part-1 h1{
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background: #9c0000;
+    color: white;
+    font-family: 'Minecraft Font';
+}
+
+.mp-part-1 p{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.mp-part-1 img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.mp-part-2{
+    position: relative;
+    width: 40%;
+}
+
+.dropmodal-content-viewmodel-product{
+	width: 350px;
+	height: 350px;
+	background: transparent;
+	margin-left: 50%;
+	transform: translate(-50%);
+	margin-top: 10px;
+}
+
+.dropmodal-content-sphere{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 300px;
+	background: transparent;
+	border-radius: 100%;
+	border: solid 18px rgba(0,0,0,0.6);
+}
+
+.dm-ticket-card{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -30%);
+	width: 130px;
+	height: 200px;
+	background: transparent;
+	perspective: 1000px;
+}
+
+.dm-ticket-card-front, .dm-ticket-card-back{
+	position: absolute;
+	width: 130px;
+	height: 200px;
+}
+
+.dm-ticket-card-front{
+	background: url("../img_remote/vipterminus-card-front.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	animation-name: spinner1;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 3.5s;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+}
+
+.dm-ticket-card-back{
+	background: url("../img_remote/passebeta-card-back.png"); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	animation-name: spinner2;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 3.5s;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+}
+
+@keyframes spinner1{
+	from {
+	  transform: rotateY(20deg);
+	}
+	to {
+	  transform: rotateY(-340deg);
+	}
+}
+
+@keyframes spinner2{
+	from {
+	  transform: rotateY(-160deg);
+	}
+	to {
+	  transform: rotateY(-520deg);
+	}
+}
+
+.dm-content-details{
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translate(-50%, -85%);
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+
+.dm-content-details p{
+	font-family: 'Minecraft Font';
+}
+
+/* Second Container*/
+
+.second-container{
+    position: relative;
+    width: 100%;
+    min-height: 70vh;
+    background-color: white;
+    clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 98%);
+    display: flex;
+    flex-direction: row;
+}
+
+.second-container iframe{
+    position: relative;
+    padding: 30px 15px 30px 55px;
+}
+
+/* Geral Container Infos*/
+
+.container-info{
+    position: relative;
+    max-width: 50vw;
+    height: 100%;
+    padding: 30px 15px 30px 15px;
+    font-family: 'Minecraft Font';
+}
+
+/*Modal*/
+
+.modal-content-purchase{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content-purchase select{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.modal-content-purchase button{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border: none;
+    border-radius: 1000px;
+    font-size: 20px;
+    font-family: 'Minecraft Font';
+    margin-bottom: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    transition: 300ms;
+}
+
+.modal-content-purchase button:hover{
+    filter: invert(1);
+}
+
+.modal-content-purchase p {
+    text-align: center;
+    font-size: 30px;
+    color: yellowgreen;
+    font-family: 'Minecraft Font';
+}
+
+/* Login Container */
+
+.container-login{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: fit-content;
+    width: 375px;
+    border-radius: 8px;
+    z-index: 105;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.container-login form h1{
+    text-align: center;
+    font-family: '8 BIT WONDER';
+    color: rgb(61, 61, 61);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Minecraft Font';
+}
+
+.container-login form input{
+    width: 80%;
+    height: 50px;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Minecraft Font';
+}
+
+.container-login form button{
+    border-radius: 1000px;
+    border: none;
+    background-color: #9c0000;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    font-size: 22px;
+    transform: translate(-50%);
+    font-family: 'Minecraft Font';
+}
+
+.container-login form:last-child{
+    padding: 0;
+    border-left: solid 1px black;
+}
+
+.container-login img{
+    position: absolute;
+    height: 30px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 5;
+    animation-name: spinning-info;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 3.5s;
+	transform-style: preserve-3d;
+}
+
+@keyframes spinning-info{
+	from {
+        transform: rotateY(20deg);
+      }
+      to {
+        transform: rotateY(-340deg);
+      }
+}
+
+.discord-button{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 100%;
+    background-color: #7289DA;
+    padding: 12.5px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    z-index: 60;
+}
+
+.discord-button:hover{
+    padding: 15px;
+    bottom: 12.5px;
+    right: 12.5px;
+}
+
+.discord-button img{
+    height: 45px;
+    filter: invert(1);
+}

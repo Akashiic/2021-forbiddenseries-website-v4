@@ -1,0 +1,2310 @@
+/* CSS Document */
+
+@font-face{
+	font-family: '8 BIT WONDER';
+	src: url("../fonts/8-BIT WONDER.woff") format('woff');
+}
+
+@font-face{
+	font-family: 'Minecraft';
+	src: url("../fonts/Minecraft.woff") format('woff');
+}
+
+
+@font-face{
+	font-family: 'Minecraft Font';
+	src: url("../fonts/minecraft_font.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'Minecraft Font Unicode';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/1_MinecraftRegular1.woff') format('woff');
+}
+
+
+@font-face{
+	font-family: "Raleway Regular";
+	src: url("../fonts/Raleway-Regular.woff") format('woff');
+}
+
+/* This the end of the @Font-face*/
+
+.active{
+	background-color: #82FE7D;
+	z-index: -9999 !important;
+}
+
+/* Download Page */
+
+.container-gx{
+	width: 100%;
+	height: 1000px;
+}
+
+/* Main */
+
+body::-webkit-scrollbar{
+	background: #181D21 !important;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+	background: rgba(126, 126, 126, 0.5);
+	transition: all .4s;
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent;
+  }
+
+*::-webkit-scrollbar-thumb:hover{
+	background: rgba(126, 126, 126, 0.8)
+}
+
+*{
+	outline: none;
+}
+
+body{
+	padding-right: 0 !important;
+}
+
+.container-fluid{
+    padding-right:0 !important;
+    padding-left:0 !important;
+    margin-right:auto !important;
+    margin-left:auto !important;
+	overflow: hidden;
+}
+
+.bg-device-background{
+	display: none;
+}
+
+.bg-image{
+    position: fixed;
+    top:0px;
+    left:0px;
+	background-image: url("../img_remote/background-drop-mystic.png") !important;
+	background-size: 102% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+	width: 100%;
+	height: 100%;
+	z-index: -100;
+	overflow: hidden;
+}
+
+.container-shop-flow{
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+
+.main-header{
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+
+.g-header{
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+
+.main-navbar-div{
+	position: absolute;
+	top: 11px;
+	left: 13px;
+	font-family: "8 BIT WONDER";
+	font-size: 18px;
+	-webkit-text-stroke: 0.6px black;
+	cursor: pointer;
+}
+
+.mobile-text-navbar{
+	display: none;
+}
+
+.mobile-navbar{
+	display: none;
+}
+
+#ul-1{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background: rgba(0,0,0,0.6);
+	color: white;
+	padding-left: 280px;
+}
+
+#li-1{
+	float: left;
+	cursor: pointer;
+	transition: .4s;
+}
+
+#a-1{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px 15px;
+	text-decoration: none;
+	font-family: Minecraft;
+	z-index: 8;
+}
+
+.logout-session{
+	background-color: #960C0E;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	padding-top: 12.3px !important;
+	padding-bottom: 12.3px !important;
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
+
+.logout-session img{
+	height: 30px;
+	border-radius: 100%;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.logout-session:hover{
+	background-color: #B31802;
+}
+
+.main-navbar ul li label{
+	display: block;
+	text-align: center;
+	padding: 15px 16px;
+	text-decoration: none;
+	font-family: Minecraft;
+	background: #1BB6A4;
+	cursor: pointer !important;
+	z-index: 9;
+}
+
+#li-1:hover{
+	background: #719CD8;
+	z-index: 10;
+}
+
+#margin-left{
+	float: right;
+}
+
+.subCointer-sCarSpan{
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.carrinho-forbidden{
+	float: right !important;
+}
+
+.shopping-cart-span{
+	position: relative;
+	border-radius: 1000px;
+	background-color: white;
+	border: 5px solid white;
+	text-align: center;
+	color: black;
+	font-size: 13px;
+	padding-top: 4px;
+	padding-left: 4.5px;
+	padding-right: 2.6px;
+}
+
+/* DONATE MODAL */
+
+.dc-newgrounds{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.35);
+	backdrop-filter: blur(15px);
+	z-index: 999 !important;
+	display: none;
+}
+
+.dc-background-exit{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+}
+
+.dc-fire-form{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 250px;
+	background: white;
+	border-radius: 8px;
+	padding-top: 10px;
+}
+
+.dc-fire-form h1{
+	font-family: "8 BIT WONDER";
+	font-family: 22px;
+	text-align: center;
+	color: white;
+	-webkit-text-stroke: 1px black;
+}
+
+.dc-fire-form input{
+	width: 80%;
+	height: 40px;
+	margin-left: 50%;
+	margin-top: 20%;
+	transform: translate(-50%, -50%);
+	border: solid 1px black;
+	font-size: 30px;
+	font-family: 'Minecraft Font';
+}
+
+.dc-fire-form button{
+	height: 42.5px;
+	width: 170px;
+	margin-left: 50%;
+	transform: translate(-50%);
+	background: #374F71;
+	border-radius: 100px;
+	margin-top: 10px;
+	border: none;
+	font-family: 'Minecraft Font';
+	color: white;
+	transition: .3s;
+}
+
+.dc-fire-form button:hover{
+	background-color: greenyellow;
+}
+
+/* REGISTER MODAL */
+
+.modal-register-button{
+	background: url("https://64.media.tumblr.com/5eb49aff7c0608daaed49bbf03bbe2bf/2ccf8d2cbd84ad3c-66/s540x810/0faad7baf91a5b0fb097d88bf50d2dc63a3763e8.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 95%;
+	height: 80px;
+	border-radius: 12px;
+	border: solid 1px black;
+	text-align: center;
+	padding-top: 5px;
+	transition: all .4s;
+	z-index: 99 !important;
+	cursor: pointer;
+	margin-left: 50%;
+	transform: translate(-50%);
+}
+
+.modal-register-button p{
+	font-family: "8 BIT WONDER";
+	color: white;
+	-webkit-text-stroke: 1px black;
+	font-size: 18px;
+}
+
+.modal-register p2{
+	font-family: 'Minecraft Font';
+	color: #FF3134;
+	-webkit-text-stroke: 0.5px black;
+	font-size: 18px;
+}
+
+.modal-register-button:hover{
+	width: 100%;
+}
+
+/* Dropdown Navbar */
+
+#ul-2{
+	position: absolute;
+	width: 125px;
+	right: 2.5px;
+	display: none;
+	z-index: 100 !important;
+	background-color: #960C0E;
+	margin: 0 !important;
+	padding: 0;
+	overflow: hidden !important;
+	transition:1s;
+    opacity:0;
+}
+
+#li-2{
+	list-style: none;
+	font-family: 'Minecraft';
+	text-align: center;
+	border-top: solid 0.3px rgba(0,0,0,0.5);
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+	padding-right: 10px !important;
+	padding-left: 10px !important;
+}
+
+#li-2:hover{
+	background-color: #B31802;
+	font-size: auto;
+}
+
+.a-2{
+	text-decoration: none !important;
+	color: white !important;
+}
+
+.dropdown-session:hover #ul-2{
+	display: block;
+	opacity:1;
+    transition:0s;
+}
+
+#a-1{
+	
+}
+
+/* Main Content Body */
+
+.container-ppl{
+	position: absolute;
+	top: 120px;
+	width: 100%;
+	height: auto;
+	background: transparent;
+	z-index: 0;
+	border: solid 0px black;
+}
+
+.main-body-neck{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding-left: 100px !important;
+	padding-right: 100px !important;
+}
+
+/* Online Players Panel */
+
+.panel-online-players{
+	background: transparent;
+	backdrop-filter: blur(24px);
+	color: white;
+	text-align: center;
+	width: 350px;
+	height: 350px;
+	clip-path: circle(50% at 50% 50%);
+	border: solid 20px rgba(0,0,0,0.7);
+	border-radius: 50%;
+	margin-top: 50px;
+	font-family: 'Minecraft Font';
+}
+
+.status-players{
+	margin-top: 35%;
+	transform: translate(0,-35%);
+	font-size: 100px;
+}
+
+.panel-online-players p{
+	margin-top: -70px;
+	font-size: 15px;
+	color: greenyellow;
+}
+
+/* News Module*/
+
+.main-block-noticias{
+	position: absolute;
+	background: transparent;
+	width: 505px;
+	height: 400px;
+	top: 200px;
+	list-style: none;
+	text-decoration: none;
+	display: none;
+}
+
+.main-primary-noticia li{
+	position: absolute;
+	background: #F5F5F5;
+	border: solid 3px black;
+	width: 95px;
+	height: 95px;
+	transform: skew(-5deg, 0deg);
+	text-align: center;
+	font-size: 30px;
+	left: 0px;
+	z-index: 1;
+}
+
+#primary-list-one{
+	top: 0px;
+}
+
+#primary-list-two{
+	top: 100px;
+}
+
+#primary-list-three{
+	top: 200px;
+}
+
+.main-secondary-noticia li{
+	position: absolute;
+	background: #181D21;
+	width: 410px;
+	height: 85px;
+	transform: skew(-5deg, 0deg);
+	border-top: solid 3px yellow;
+	border-right: solid 3px yellow;
+	border-bottom: solid 3px yellow;
+	color: white;
+	left: 88px;
+	z-index: 0;
+}
+
+.main-secondary-noticia li p{
+	margin-left: 10px;
+}
+
+#secondary-list-one{
+	top: 5px;
+}
+
+#secondary-list-two{
+	top: 105px;
+}
+
+#secondary-list-three{
+	top: 205px;
+}
+
+/* 3D View Top Doadores Fron-End */
+
+.top-doadores-panel{
+	position: inherit;
+	margin-top: 0px;
+	margin-right: 1px;
+	background: white;
+	width: 350px;
+	height: 490px;
+	border: solid 0.2px #181D21;
+}
+
+.header-panel{
+	position: inherit;
+	text-align: center;
+	margin-top: -30px;
+	padding-right: 10px;
+	padding-left: 10px;
+	color: white;
+	-webkit-text-stroke: 1.2px black;
+	width: 100%;
+	font-family: "8 BIT WONDER";
+	font-size: 21px;
+}
+
+.nick-name-panel-doador{
+	position: absolute;
+	background: rgba(0,0,0,0.4);
+	text-align: center;
+	width: auto;
+	color: white;
+	left: 80%;
+	/*transform: translate(-64.5%);*/
+	font-family: 'Minecraft Font';
+}
+
+.view-top-doadores-3d{
+	margin-top: 70px;
+	height: auto;
+}
+
+.button-panel-donate button{
+	width: 40%;
+	height: 35px;
+	margin-left: 50%;
+	margin-top: 3px;
+	transform: translate(-50%);
+	border-radius: 200px;
+	background: linear-gradient(to left top, greenyellow, #719CD8);
+	font-family: "8 BIT WONDER";
+	color: white;
+	font-size: 16px;
+	-webkit-text-stroke: 1px black;
+	border-top: solid 0.2px black;
+	border-left: solid 0.2px black;
+
+}
+
+.button-panel-donate button:active{
+    border-bottom: solid 0.2px black;
+	border-right: solid 0.2px black;
+	background: linear-gradient(to right bottom, greenyellow, #719CD8);
+}
+
+/* Donate System */
+
+.popup-donate{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	backdrop-filter: blur(16px);
+	z-index: 9999 !important;
+	display: none;
+}
+
+.background-close-popup-donate{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: transparent;
+	width: 100%;
+	height: 100%;
+	z-index: -999;
+}
+
+#donate-form{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	background: white;
+	border-radius: 12px;
+	width: 500px;
+	height: 190px;
+	transform: translate(-50%, -50%);
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+#donate-input{
+	position: fixed;
+	top: 60%;
+	left: 5%;
+	border: solid 1px black;
+	transform: translate(-5%, -50%);
+	width: 260px !important;
+	height: 40px !important;
+	font-size: 25px;
+}
+
+.popup-donate h1{
+	margin-top: 10px;
+	text-align: center;
+	font-family: "8 BIT WONDER";
+	color: white;
+	-webkit-text-stroke: 1px black;
+}
+
+.popup-donate form button{
+	position: fixed;
+	right: 5%;
+	top: 47.5%;
+	font-size: 25px;
+	text-align: center;
+	border-radius: 50px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 6.5px;
+	padding-bottom: 5px;
+	width: 130px;
+	border: none;
+	background: #719CD8;
+	color: white;
+	font-family: 'Minecraft Font';
+	-webkit-text-stroke: 0.3px black;
+}
+
+/* Login */
+
+.login{
+	background: rgba(0,0,0,0.5);
+	backdrop-filter: blur(8px);
+	width: 100%;
+	height: 100vh;
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	display: none;
+}
+
+.close-background-login{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	z-index: 1000;
+}
+
+#lp-failure{
+	display: none;
+}
+
+.login-popups-invalid{
+	position: absolute;
+	width: 330px;
+	height: 40px;
+	background: #D60307;
+	font-family: "Minecraft Font Unicode";
+	font-size: 16px;
+	color: white;
+	top: 90%;
+	z-index: 1010 !important;
+	right: 20px;
+	border-radius: 6px 0px 0px 6px;
+}
+
+.login-popups-invalid p{
+	position: absolute;
+	top: 5%;
+	left: 15%;
+	transform: translate(-15%, -5%);
+	margin-top: 25px;
+}
+
+.login-popups-invalid i{
+	position: absolute;
+	left: 100%;
+	width: 100%;
+	color: black;
+	cursor: pointer;
+}
+
+.login-popups-invalid span{
+	position: absolute;
+	background: white;
+	height: 3px;
+	width: 1%;
+	top: 100%;
+	left: 0;
+	transform: translate(0, -100%);
+	border-radius: 0px 0px 0px 6px;
+}
+
+#lp-sucessful{
+	display: none;
+}
+
+.login-popups-sucessful{
+	position: fixed;
+	width: 330px;
+	height: 40px;
+	background-color: yellowgreen;
+	font-family: "Minecraft Font Unicode";
+	font-size: 16px;
+	text-align: center;
+	color: white;
+	z-index: 1011 !important;
+	right: 20px;
+	top: 90%;
+
+}
+
+.login-popups-sucessful p{
+	height: auto;
+	margin-top: 8px;
+}
+
+.login-popups-sucessful i{
+	color: white;
+	margin-left: 143px;
+	cursor: pointer;
+}
+
+.login-system{
+	position: absolute;
+	background: white;
+	width: 340px;
+	height: 360px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 12px;
+	transition: transform 300ms ease-in-out,opacity 300ms ease-in-out;
+	z-index: 1002 !important;
+}
+
+.login-system h1{
+	position: inherit;
+	font-family: "8 BIT WONDER";
+	color: white;
+	-webkit-text-stroke: 1px black;
+	left: 50%;
+	top: 7%;
+	transform: translate(-50%);
+}
+
+.login-system form{
+	position: fixed;
+	top: 10%;
+}
+
+.login-system form .data{
+	padding-top: 70px;
+	text-align: center;
+}
+
+.login-system form .data input{
+	position: fixed;
+	left: 50%;
+	height: 50px;
+	width: 85%;
+	font-size: 20px;
+	border: 1px solid #181D21;
+	transform: translate(-50%);
+}
+
+#button-login-one{
+	position: fixed;
+	top: 265px;
+	left: 50%;
+	transform: translate(-50%);
+	width: 210px;
+	height: 53px;
+	font-family: 'Minecraft Font';
+	color: white;
+	-webkit-text-stroke: 0.3px black;
+	font-size: 20px;
+	background: #374F71;
+	border: none;
+	border-radius: 100px;
+	transition: .6s;
+}
+
+#button-login-one:hover{
+	background-color: greenyellow;
+}
+
+/* Down Body Content */
+
+.bodydown-content{
+	position: absolute;
+	background: white;
+	width: 90%;
+	height: 1200px;
+	top: 740px;
+	left: 50%;
+	transform: translate(-50%);
+	padding-left: 10% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.videoyt iframe{
+	border: 3px black;
+	border-radius: 6px;
+}
+
+.discord-panel-widget{
+	position: inherit;
+}
+
+.body-grid-layout{
+	display: grid;
+	max-height: 1200px;
+	grid-template-rows: 1200px;
+	grid-template-columns: auto 400px;
+	grid-template-areas: ".body-content-index1" ".body-content-index2";
+}
+
+.top-donators-month{
+	width: 90%;
+	height: 330px;
+	background-color: white;
+	margin-left: 50%;
+	transform: translate(-50%);
+}
+
+.top-donators-month p{
+	background: rgba(0,0,0,0.3);
+}
+
+.content-body-index2{
+	background-color: #E8E8E8;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.first-user-donator li{
+	list-style: none;
+	display: inline;
+}
+
+.first-user-donator li:last-child{
+	float: right;
+}
+
+.first-user-donator li img{
+	width: 30px;
+	height: 30px;
+}
+
+.first-user-donator{
+	width: 90%;
+	border-top: solid 1px rgba(0,0,0,0.3);
+	border-bottom: solid 1px rgba(0,0,0,0.3);
+}
+
+.info-user{
+	text-align: left;
+	display: flex;
+	justify-content: center;
+}
+
+/* SKIP///SKIP///SKIP///SKIP///SKIP///SKIP/// */
+/* SKIP///SKIP///SKIP///SKIP///SKIP///SKIP/// */
+/* SKIP///SKIP///SKIP///SKIP///SKIP///SKIP/// */
+
+.keydroptower-container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	backdrop-filter: blur(10px);
+	z-index: 99;
+	display: none;
+}
+
+.keydroptower-exit{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+}
+
+.keydroptower-window{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: fit-content;
+	background-color: white;
+	border-radius: 12px;
+	box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.keydroptower-window h1{
+	font-family: '8 BIT WONDER';
+	color: white;
+	-webkit-text-stroke: 1px black;
+	text-align: center;
+	font-size: 1.75rem;
+}
+
+.keydroptower-window form input{
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	margin-top: 30px;
+	border: solid 1px black;
+	width: 90%;
+	height: 40px;
+	font-family: 'Minecraft Font';
+}
+
+.keydroptower-window form{
+	position: relative;
+	height: fit-content;
+}
+
+.keydroptower-window form button{
+	position: relative;
+	left: 50%;
+	top: 20px;
+	margin-bottom: 30px;
+	transform: translate(-50%);
+	border: none;
+	border-radius: 1000px;
+	color: white;
+	font-family: 'Minecraft Font';
+	background-color: teal;
+	transition: .4s;
+	width: 110px;
+	height: 35px;
+}
+
+.keydroptower-window form button:hover{
+	background-color: #E3E3E3;
+	color: black;
+}
+
+.keydroptower-window hr{
+
+}
+
+.revelInfo{
+	display: none;
+}
+
+.nameProduct-division p, .key-division p{
+	padding: 0;
+	margin: 0;
+	font-family: 'Minecraft Font Unicode';
+}
+
+.key-division p2{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#division-revel{
+	width: 90%;
+	margin-left: 50%;
+	transform: translate(-50%);
+}
+
+.key-division, .nameProduct-division{
+	display: none;
+	text-align: center;
+	font-size: 24px;
+}
+
+#product-revel{
+	font-size: 22px;
+}
+
+#key-append{
+	color: violet;
+}
+
+.loadingInfos{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	height: 100%;
+	border-radius: 12px;
+	display: none;
+}
+
+.positionLoadingInfo{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: fit-content;
+}
+
+/* SKIP///SKIP///SKIP///SKIP///SKIP///SKIP/// */
+/* SKIP///SKIP///SKIP///SKIP///SKIP///SKIP/// */
+/* SKIP///SKIP///SKIP///SKIP///SKIP///SKIP/// */
+
+.list-main-navbar{
+	position: absolute;
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+
+.list-main-navbar li{
+	position: relative;
+	text-align: center;
+	background-color: rgba(0,0,0,0.6);
+	font-family: 'Minecraft';
+	width: 135px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.list-main-navbar li:hover{
+	background-color: #719CD8;;
+}
+
+.toplist-main:hover .list-main-navbar{
+	display: block;
+}
+
+/* SKIP///SKIP///SKIP///SKIP///SKIP///SKIP/// */
+/* SKIP///SKIP///SKIP///SKIP///SKIP///SKIP/// */
+/* SKIP///SKIP///SKIP///SKIP///SKIP///SKIP/// */
+
+/* Content Index 1 IMPORT*/
+
+.container-xl{
+	margin-left: 1px !important;
+	margin-right: 1px !important;
+}
+
+.content-body-index1{
+	background-color: white;
+	padding-top: 1.5%;
+	padding-bottom: 30px;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	max-height: 1200px !important;
+	max-width: 100% !important;
+	overflow-x: hidden;
+	overflow-y: auto;
+	
+}
+
+.noticia-form{
+	background: #E3E3E3;
+	width: 100%;
+	height: auto;
+	margin-left: 50%;
+	transform: translate(-50%);
+	padding-bottom: 10px;
+	margin-top: 10px;
+}
+
+.cabecalho{
+	display: inline-flex;
+	width: 100%;
+}
+
+.noticia-line-separate{
+	width: 95%;
+	background: #B8B8B8;
+	height: 1.5px;
+	margin-left: 50%;
+	transform: translate(-50%);
+	opacity: 0.3;
+}
+
+.data-index-noticia{
+	text-align: center;
+	background: white;
+	width: 70px !important;
+	height: 70px !important;
+	margin-top: 5px;
+	margin-right: 5px !important;
+	border: solid 1px black;
+	padding: 0 !important;
+}
+
+.data-index-noticia p{
+	padding: 0 !important;
+	margin: 0;
+	font-family: "Raleway Regular";
+	font-size: 22px;
+	width: 70px !important;
+	height: 70px !important;
+	word-wrap: break-word;
+	text-align: center;
+}
+
+.titulo-noticia {
+	padding-top: 0.75rem;
+	padding-left: 10px;
+}
+
+.titulo-noticia h1{
+	font-size: auto !important;
+}
+
+.avatar-img img{
+	background-size: cover;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin: 5px;
+}
+
+.text-noticia{
+	word-wrap: break-word;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #C6C6C6 !important;
+	margin-top: 10px;
+}
+
+.post-username{
+	background: rgba(0,0,0,0.5);
+	color: darkred;
+	text-align: center;
+	margin-top: 2px;
+	height: 20px;
+	width: 70px;
+	margin-left: 9px;
+	font-family: 'Minecraft Font';
+}
+
+.noticia{
+	position: inherit;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 15px;
+	width: 100%;
+	height: auto;
+}
+
+.content-noticia img{
+	width: 95%;
+	height: auto;
+	margin-left: 50%;
+	transform: translate(-50%);
+}
+
+/*Publisn Noticia Noticai IMPORT1*/
+
+#publ-news-xi{
+
+}
+
+.publishing-noticia{
+	position: relative;
+	background: #E3E3E3;
+	padding: 15px 15px 15px 15px;
+}
+
+.publishing-display{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+}
+
+.publishing-id-user{
+	position: relative;
+	top: 50px;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: fit-content;
+	margin: 5px 20px 5px 5px;
+}
+
+.publishing-id-user img{
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	margin-bottom: 5px;
+	margin-left: 50%;
+	transform: translate(-50%);
+}
+
+.publishing-id-user p{
+	position: relative;
+	margin-top: 5px;
+	font-family: 'Minecraft Font';
+	background: rgba(0,0,0,0.4);
+	color: white;
+	width: fit-content;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.publishing-post{
+	width: 100%;
+}
+
+#publishing-form-post{
+	display: flex;
+	flex-direction: column;
+}
+
+#publishing-form-post textarea{
+	margin-top: 10px;
+	width: 100%;
+	height: 100px;
+	resize: none;
+	margin-bottom: 10px;
+}
+
+#publishing-form-post .publishing-button-post{
+	position: relative;
+	left: 100%;
+	transform: translate(-100%);
+	width: 100px;
+	height: 35px;
+	color: white;
+	font-family: 'Minecraft Font';
+	border: none;
+	border-radius: 1000px;
+	background: cornflowerblue;
+	transition: .4s;
+	margin-top: 15px;
+}
+
+#publishing-form-post .publishing-button-post:hover{
+	color: black;
+	background-color: white;
+}
+
+/* Footer */
+
+.footer{
+	background: #181D21;
+	color: white;
+	height: 50px;
+	font-size: 17.5px;
+}
+
+.copyright{
+	left: 40px;
+	display: inline;
+	width: 100px;
+}
+
+.copyright p1{
+	left: 104px;
+	top: 2px;
+	width: 300px;
+	font-family: "8 BIT WONDER";
+	font-size: 15px;
+	-webkit-text-stroke: 0.5px black;
+}
+
+/* LOJA */
+
+.shop-content{
+	margin-top: 80px;
+	width: 100%;
+	height: 530px !important;
+	display: flex !important;
+	flex-direction: row !important;
+	text-align: center !important;
+	justify-content: center !important;
+}
+
+.footer-shop{
+	position: inherit;
+	margin-top: 90px;
+}
+
+.product{
+	background-image: url("../img_remote/tumblr_pw5ce8WJna1qemas4o1_500.webp");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 270px;
+	height: 470px;
+	border-radius: 12px;
+	border: solid 1px black;
+	transition: all .3s;
+}
+
+.product:hover{
+	width: 290px;
+}
+
+/* Passe Alpha and Beta */
+
+.title-product-info{
+	font-family: "8 BIT WONDER";
+	font-size: 35px;
+	text-align: center;
+	width: 100%;
+	-webkit-text-stroke: 1px black;
+	color: #4F4F4F;
+}
+
+.name-info-passe-beta{
+	color: greenyellow;
+	font-family: 'Minecraft Font';
+	font-size: 30px;
+	background: rgba(0,0,0,0.7);
+	margin-top: 280px;
+}
+
+#passe-beta{
+	cursor: pointer;
+}
+
+/* Infopassebetapopup */
+
+#passebeta-dm-interface-1{
+	display: none;
+}
+
+.dropmodal-interface{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	backdrop-filter: blur(30px);
+	z-index: 90;
+}
+
+.dropmodal-interface-subcontainer{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.dropmodal-close{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -999;
+}
+
+.dropmodal-content-flex-1{
+	background: rgba(0,0,0,0.3);
+	width: 32.5%;
+	height: 100%;
+
+}
+
+.dropmodal-content-flex-1 p, .dropmodal-content-flex-1 li, .dropmodal-content-flex-1 span{
+	color: white;
+	font-family: 'Raleway Regular';
+	font-size: 18px;
+	padding-right: 5px;
+	padding-left: 5px;
+	list-style: none;
+}
+
+.dropmodal-content-flex-1 h1{
+	background-color: rgba(51, 16, 146, 0.651);
+	color: white;
+	text-align: center;
+	font-family: "8 BIT WONDER";
+}
+
+.dropmodal-content-flex-2{
+	position: relative;
+	width: 32.5%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+}
+
+.dropmodal-content-viewmodel-product{
+	width: 350px;
+	height: 350px;
+	background: transparent;
+	margin-left: 50%;
+	transform: translate(-50%);
+	margin-top: 90px;
+}
+
+.dropmodal-content-sphere{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 300px;
+	background: transparent;
+	border-radius: 100%;
+	border: solid 18px rgba(0,0,0,0.6);
+}
+
+.dm-ticket-card{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -30%);
+	width: 130px;
+	height: 200px;
+	background: transparent;
+	perspective: 1000px;
+}
+
+.dm-ticket-card-front, .dm-ticket-card-back{
+	position: absolute;
+	width: 130px;
+	height: 200px;
+}
+
+.dm-ticket-card-front{
+	background: url("../img_remote/passebeta-card-front.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	animation-name: spinner1;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 3.5s;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+}
+
+.dm-ticket-card-back{
+	background: url("../img_remote/passebeta-card-back.png"); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	animation-name: spinner2;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 3.5s;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+}
+
+@keyframes spinner1{
+	from {
+	  transform: rotateY(20deg);
+	}
+	to {
+	  transform: rotateY(-340deg);
+	}
+}
+
+@keyframes spinner2{
+	from {
+	  transform: rotateY(-160deg);
+	}
+	to {
+	  transform: rotateY(-520deg);
+	}
+}
+
+.dm-content-details{
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translate(-50%, -85%);
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+
+.dm-content-details p{
+	font-family: "8 BIT WONDER";
+}
+
+.dropmodal-content-purchase{
+	position: absolute;
+	top: 100%;
+	transform: translate(0, -100%);
+	width: 100%;
+}
+
+.dropmodal-interface-quantity{
+	width: 200px;
+	height: 40px;
+	background: rgba(0,0,0,0.6);
+	margin-left: 50%;
+	transform: translate(-50%);
+	display: flex;
+	flex-direction: row;
+}
+
+#dm-label1{
+	width: 20%;
+}
+
+#dm-label2{
+	width: 60%;
+}
+
+#dm-label3{
+	width: 20%;
+}
+
+.dropmodal-interface-quantity i{
+	margin-left: 50%;
+	margin-top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 32px;
+	color: whitesmoke;
+}
+
+.dropmodal-interface-quantity label{
+	cursor: pointer;
+}
+
+.dropmodal-interface-quantity input{
+	border: none;
+	color: whitesmoke;
+	background: transparent;
+}
+
+.dropmodal-interface-quantity input::-webkit-outer-spin-button, .dropmodal-interface-quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.dropmodal-interface-quantity input:focus{
+	outline: none;
+}
+
+#dropmodal-pb-buttonPurchase{
+	width: 300px;
+	height: 60px;
+	background: rgba(0,0,0,0.6);
+	border-radius: 100px;
+	margin-top: 15px;
+	margin-left: 50%;
+	transform: translate(-50%);
+	transition: .4s;
+	cursor: pointer;
+	border: none;
+	font-family: "8 BIT WONDER";
+	font-size: 18px;
+	color: white;
+	transition: .4s;
+}
+
+#dropmodal-pb-buttonPurchase img{
+	position: absolute;
+	left: -15px;
+	top: -15px;
+	width: 80px;
+	height: 80px;
+	transition: .4s;
+}
+
+#dropmodal-pb-buttonPurchase:hover *{
+	filter: invert(100%);
+}
+
+#dropmodal-pb-buttonPurchase:hover{
+	background-color: white;
+}
+
+.dropmodal-interface-total{
+	background: transparent;
+	backdrop-filter: blur(15px);
+	width: 100%;
+	margin-top: 10px;
+}
+
+.dropmodal-interface-total label{
+	width: 100%;
+	text-align: center;
+	color: yellowgreen;
+	font-size: 36px;
+	font-family: 'Minecraft Font';
+}
+
+/* Container Shop Body Down sla*/
+
+/* Window DropTower */
+
+#wdt-vipvanilla{
+	display: none;
+}
+
+#wdt-vipvanilla .window-droptower-content-1 h2{
+	background-color: #1BB6A4;
+	color: white;
+}
+
+#wdt-vipradio{
+	display: none;
+}
+
+#wdt-vipradio .window-droptower-content-1 h2{
+	background-color: #ffd902;
+	color: white;
+}
+
+#wdt-vipavaroza{
+	display: none;
+}
+
+#wdt-vipavaroza .window-droptower-content-1 h2{
+	background-color: rgb(255, 117, 221);
+	color: white;
+}
+
+.window-droptower *{
+	overflow: hidden;
+}
+
+.window-droptower{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	backdrop-filter: blur(5px);
+	overflow-y: visible;
+	z-index: 99;
+}
+
+.window-droptower-close{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+}
+
+.window-droptower-container-flex{
+	width: 900px;
+	height: 650px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(0,0,0,0.7);
+	display: flex;
+	flex-direction: row;
+}
+
+.window-droptower-content-1{
+	width: 50%;
+	height: 100%;
+	background: transparent;
+	word-wrap: break-word;
+	border-right: solid 0.1px white;
+	overflow-y: hidden;
+}
+
+.window-droptower-content-1 h2{
+	position: sticky;
+	top: -1px;
+	text-align: center;
+	z-index: 999;
+}
+
+.wdt-contentFlex-1{
+	width: 100%;
+	height: 100%;
+	font-family: 'Minecraft Font';
+	padding-right: 15px;
+	padding-left: 15px;
+	color: white;
+	overflow-y: visible;
+	margin-top: 15px;
+}
+
+.wdt-contentFlex-1 p{
+	overflow-y: auto;
+}
+
+.wdt-contentFlex-1 img{
+	width: 60%;
+	margin-left: 50%;
+	transform: translate(-50%);
+}
+
+.wdt-contentFlex-1 hr{
+	opacity: 0;
+}
+
+.window-droptower-content-2{
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background: transparent;
+	border-left: solid 0.1px white;
+	padding-bottom: 10px;
+}
+
+.wdt-purchase-interface{
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	transform: translate(0, -100%);
+}
+
+.wdt-purchase-mounthQuantity{
+	margin-bottom: 30px;
+}
+
+.wdt-purchase-finishButton{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.wdt-purchase-finishButton button{
+	position: relative;
+	width: 330px;
+	height: 65px;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	font-size: 20px;
+	border-radius: 1000px;
+	border: none;
+	font-family: '8 BIT WONDER';
+	transition: .4s;
+}
+
+.wdt-purchase-finishButton button img{
+	position: absolute;
+	left: -10px;
+	top: -12.5px;
+	width: 80px;
+	height: 80px;
+}
+
+.wdt-purchase-finishButton button:hover{
+	filter: invert(1);
+}
+
+.wdt-purchase-totalInterface{
+	width: 100%;
+	height: fit-content;
+	background: rgba(0,0,0,0.3);
+}
+
+.wdt-purchase-totalInterface label{
+	font-family: 'Minecraft Font';
+	font-size: 36px;
+	color: greenyellow;
+	margin-left: 50%;
+	transform: translate(-50%);
+}
+
+.wdt-purchase-mountQuantity-subcontainer{
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	width: fit-content;
+}
+
+.wdt-selection{
+	width: 150px;
+	outline: none;
+	border: none;
+	background: rgba(255, 255, 255, 0.253);
+}
+
+.wdt-interface-mask{
+	width: 100%;
+}
+
+#wdt-interMask-circleMask{
+	margin-top: 70px;
+	width: 100%;
+	border-top: solid 25px rgba(0,0,0,0.3);
+	border-bottom: solid 25px rgba(0,0,0,0.3);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#wdt-interMask-circleMask h2{
+	text-align: center;
+	color: white;
+	-webkit-text-stroke: 0.5px black;
+	font-family: '8 BIT WONDER';
+}
+
+/*END*/
+
+/* -+-+-+-+-+- */
+
+#xrg-droptower-cashObtain{
+	display: none;
+}
+
+.xrg-container{
+	position: relative;
+}
+
+.xrg-limited-forbidden{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	backdrop-filter: grayscale(100%);
+	z-index: 5;
+	border-top: solid 5px black;
+	border-bottom: solid 5px black;
+}
+
+.xrg-limited-forbidden h1{
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	text-align: center;
+	color: white;
+	font-family: 'Raleway Regular';
+	background: rgba(0, 0, 0, 0.5);
+}
+
+#xrg-droptower-cashObtain h1{
+	color: white;
+	background-color: tomato;
+}
+
+#xrg-droptower-getBlockProtection{
+	display: none;
+}
+#xrg-droptower-getBlockProtection h1{
+	color: white;
+	background-color: rgb(77, 41, 0);
+	font-size: 2rem;
+}
+
+.xrg-droptower-container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	backdrop-filter: blur(10px);
+	z-index: 99;
+}
+
+.xrg-droptower-close{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+}
+
+.xrg-droptower-gui{
+	position: relative;
+	width: 500px;
+	height: 90%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(0,0,0,0.5);
+}
+
+.xrg-droptower-gui h1{
+	text-align: center;
+}
+
+.xrg-droptower-gui p{
+	color: white;
+	font-family: 'Minecraft Font';
+}
+
+.xrg-droptower-purchase{
+	position: absolute;
+	top: 100%;
+	transform: translate(0, -100%);
+	width: 100%;
+}
+
+.xrg-droptower-purchase input{
+	margin-left: 50%;
+	transform: translate(-50%);
+	height: 30px;
+	margin-top: 10px;
+}
+
+.xrg-droptower-purchase button{
+	width: 70%;
+	height: 60px;
+	margin-left: 50%;
+	border: none;
+	transform: translate(-50%);
+	border-radius: 1000px;
+	background: rgba(0,0,0,0.3);
+	font-family: '8 BIT WONDER';
+	margin-top: 10px;
+	color: white;
+	transition: .3s;
+}
+
+.xrg-droptower-purchase button img{
+	position: absolute;
+	height: 80px;
+	width: 80px;
+	left: -10px;
+	top: -15.5px;
+}
+
+.xrg-droptower-purchase button:hover{
+	filter: invert(1);
+}
+
+.xrg-droptower-purchase label{
+	width: 100%;
+	background: rgba(0,0,0,0.3);
+	text-align: center;
+	font-family: 'Minecraft Font';
+	color: yellowgreen;
+	font-size: 34px;
+	margin-top: 10px;
+}
+
+/* -+-++-+-+-  */
+
+.wdt-details-vip{
+	position: relative;
+	width: 75%;
+	height: 60px;
+	border-radius: 1000px;
+	left: 50%;
+	transform: translate(-50%);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: greenyellow;
+	color: white;
+	border: none;
+	z-index: 1;
+}
+
+.wdt-modal-image{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+}
+
+.background-exit{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.interface-wdt-modal{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: fit-content;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 70%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 999;
+}
+
+.interface-wdt-modal img{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 95%;
+}
+
+
+
+.wdt-details-vip:active{
+	background: rgb(115, 170, 32);
+}
+
+
+/* =-=-=-0=-=-=-=- */
+
+.container-nrg{
+	background: transparent;
+	width: 100%;
+	height: auto;
+	max-height: 650px !important;
+	/*clip-path: polygon(0 0, 96% 4%, 100% 50%, 95% 100%, 12% 100%, 0 52%);*/
+	/*backdrop-filter: blur(24px);*/
+	margin-left: 50%;
+	transform: translate(-50%);
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.product-nrg{
+	position: relative;
+	background: #E3E3E3;
+	max-width: 300px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin-left: 60px !important;
+	margin-right: 60px !important;
+	padding-bottom: 51px;
+}
+
+.product-nrg img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 130px;
+	height: 130px;
+	filter: opacity(0.8);
+}
+
+.product-nrg h1{
+	background-color: rgb(105, 0, 0);
+	color: beige;
+	width: 100%;
+}
+
+.product-nrg p{
+	position: relative;
+	font-family: 'Minecraft Font';
+	margin-bottom: 50px;
+}
+
+.button-nrgx{
+	position: absolute;
+	top: 100%;
+	transform: translate(0, -100%);
+	width: 100%;
+	background-color: rgb(105, 0, 0);
+	padding-bottom: 9px;
+	padding-top: 8px;
+}
+
+.product-nrg button{
+	border: none;
+	background: #181D21;
+	border-radius: 50px;
+	height: 35px;
+	width: 140px;
+	color: white;
+	font-size: 17px;
+	transition: all .3s;
+}
+
+.product-nrg button:hover{
+	background: white;
+	color: #181D21;
+}
+
+.nrg-product-price{
+	position: absolute;
+	top: 82.5%;
+	transform: translate(0, -82.5%);
+	width: 100%;
+	height: 50px;
+	background: rgba(0,0,0,0.7);
+}
+
+.nrg-product-price p{
+	position: relative;
+	color: greenyellow;
+	font-family: 'Minecraft Font';
+	font-size: 31px;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+#nrg-p-1{
+
+}
+
+#nrg-product-3{
+
+}
+
+#nrg-product-2{
+
+}
+
+/* =-=-=-=-=-= */
+
+/* =-=-=-=- */
+
+.xrg-container{
+	margin-top: 80px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.product-xrg{
+	position: relative;
+	margin-left: 60px;
+	margin-right: 60px;
+	width: 300px;
+	height: 350px;
+	background: white;
+}
+
+#xrg-product-xi h1{
+	background: rgb(243, 203, 26);
+}
+
+#xrg-product-xi .xrg-product-containerButton{
+	background: rgb(243, 203, 26);
+}
+
+#xrg-product-xii h1{
+	background: rgb(147, 22, 185);
+	font-size: 33px !important;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#xrg-product-xii .xrg-product-containerButton{
+	background: rgb(147, 22, 185);
+}
+
+.product-xrg h1{
+	text-align: center;
+}
+
+.product-xrg img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	filter: opacity(0.5);
+	width: 180px;
+	height: 180px;
+	z-index: 0;
+}
+
+.product-xrg p{
+	position: absolute;
+	z-index: 2;
+	font-family: 'Minecraft Font';
+	font-size: 13px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.xrg-product-containerButton{
+	position: absolute;
+	top: 100%;
+	transform: translate(0, -100%);
+	width: 100%;
+	height: 60px;
+}
+
+.xrg-product-containerButton button{
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border: none;
+	border-radius: 1000px;
+	height: 40px;
+	width: 150px;
+	background-color: #181D21;
+	color: white;
+	transition: .4s;
+}
+
+.xrg-product-containerButton button:hover{
+	background-color: white;
+	color: #181D21;
+}
+
+.child-interface-add{
+	color: greenyellow;
+}
+
+.child-interface-remove{
+	color: red;
+}
+
+/* Media Device CSS */
+.background-media-main{
+	display: none;
+}
+
+@media screen and (max-width: 800px){
+	
+	.bg-image{
+		display: none;
+	}
+
+	.bg-device-background{
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-image: url('https://cs2.worldofmods.org/screenshots/0df24/2014-03/original/3b3a2e4b0188fb48cd23aecd7cf62108a47be581/137927-2014-03-07-12-22-41.jpg');
+		background-size: auto 100%;
+		width: 100%;
+		height: 100%;
+		display: block;
+		z-index: -99;
+	}
+	
+	.background-media-main{
+
+	}
+	
+	.main-logo h1{
+		font-size: 24px;
+		text-align: center;
+	}
+
+	.web-text-navbar{
+		display: none;	
+	}
+	
+	.mobile-text-navbar{
+		display: block;
+	}
+
+	#li-1{
+		float: right !important;
+	}
+
+	/* Menu Mobile */
+
+	.header-navbar-flex{
+		position: relative;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.main-navbar{
+		flex: 1;
+	}
+
+	.navDevice-mobile:hover ~ .navDevice-mobile{
+		display: block;
+	}
+
+	.navDevice-mobile{
+		position: relative;
+		top: 0;
+		right: 0;
+		width: 290px;
+		height: 100vh;
+		background-color: rgba(0, 0, 0, 0.5);
+		display: none;
+	}
+}
+
+@media screen and (max-width: 400px){
+
+	.main-navbar-div{
+		font-size: 14px;
+	}
+
+	#ul-1{
+		display: flex;
+		flex-direction: row;
+		justify-content: end;
+		padding: 0;
+	}
+
+	#li-1{
+		float: none !important;
+	}
+
+	.ipc-container-content-2{
+		display: none;
+	}
+
+}

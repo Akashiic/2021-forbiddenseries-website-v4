@@ -1,0 +1,380 @@
+/* CSS Document */
+
+@font-face{
+	font-family: '8 BIT WONDER';
+	src: url("../fonts/8-BIT WONDER.TTF");
+}
+
+@font-face{
+	font-family: 'Minecraft';
+	src: url("../fonts/Minecraft.ttf");
+}
+
+@font-face{
+	font-family: "Raleway Regular";
+	src: url("../fonts/Raleway-Regular.ttf");
+}
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.main-background{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("../img_remote/Screenshot_1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -99999;
+}
+
+/* Span Title AFC */
+
+.panel-flash{
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 9;
+}
+
+.panel-flash-container{
+	height: 100%;
+	width: 500%;
+	background: rgba(0,0,0,0.6);
+}
+
+/* Shop Content Down */
+
+#vipvanila{
+	display: none;
+}
+
+.droptower-gui{
+	background: rgba(0,0,0,0.4);
+	width: 550px;
+	height: 100%;
+	margin-left: 90%;
+	transform: translate(-90%);
+}
+
+.droptower-gui h1{
+	background: orange;
+	text-align: center;
+	color: white;
+}
+
+#droptower-3d-vipvanila{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: transparent;
+	width: 300px;
+	height: 80px;
+	color: white;
+}
+
+#droptower-3d-vipvanila p{
+	font-size: 50px;
+	text-align: center;
+	animation-name: spin, depth;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	transform-style: preserve-3d;
+	position: relative;
+	backface-visibility: hidden;
+}
+
+#droptower-3d-vipvanila p::before,
+#droptower-3d-vipvanila p::after {
+  content: "VIP Vanilla";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: rotateY(0.5deg);
+  transform-origin: 0 50%;
+}
+
+#droptower-3d-vipvanila p::after {
+	transform: rotateY(-0.5deg);
+	transform-origin: 100% 50%;
+}
+
+@keyframes spin {
+	from { transform: rotateY(0deg); }
+	to { transform: rotateY(-360deg); }
+  }
+@keyframes depth {
+	0% { text-shadow: 0 0 black; }
+	25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black, 6px 0 black; }
+	50% { text-shadow: 0 0 black; }
+	75% { text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black, -6px 0 black; }
+	100% { text-shadow: 0 0 black; }
+}
+
+.frx-main{
+	width: 100%;
+	background: transparent;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.frx-main h1{
+	background: rgba(0,0,0,0.6);
+	color: whitesmoke;
+	text-align: center;
+}
+
+.frx-container{
+	width: 90%;
+	margin-left: 50%;
+	transform: translate(-50%);
+	display: flex;
+	flex-direction: column;
+}
+
+.frx-subcontainer{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: white;
+}
+
+#frx-master-tag h3{
+	background: black;
+	color: whitesmoke;
+}
+
+.frx-user-tag-flex{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.frx-user-tag-flex p{
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.frx-staff-avatar{
+	height: 100px;
+	width: 100px;
+	border: solid 0.3px black;
+	margin-left: 50%;
+	transform: translate(-50%);
+}
+
+#frx-id-staff-false .frx-staff-avatar{
+	background: rgb(206, 206, 206);
+}
+
+#frx-id-staff-false .frx-staff-avatar i{
+	max-width: 100px;
+	max-height: 100px;
+	font-size: 100px;
+	filter: opacity(0.3);
+}
+
+.frx-staff-avatar img{
+	width: 100%;
+	height: 100%;
+}
+
+.frx-staff-nickname p{
+	margin-top: 5px;
+	background: rgba(0,0,0,0.4);
+	font-family: 'Minecraft Font';
+	color: white;
+}
+
+#frx-coordenador-tag h3{
+	background: rgb(143, 23, 2);
+	color: white;
+}
+
+.frx-utf-subcontainer{
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+#frx-administrador-tag h3{
+	background: rgb(255, 54, 54);
+	color: white;
+}
+
+#frx-moderator-tag h3{
+background-color: aquamarine;
+color: white;
+}
+
+#frx-Ajudante-tag h3{
+	background-color: rgb(87, 87, 255);
+	color: white;
+}
+
+/* Another Section */
+
+.trx-popup-staffRecruit{
+	position: fixed;
+	top: 95%;
+	left: 97.5%;
+	transform: translate(-97.5%, -95%);
+	width: 300px;
+	height: 80px;
+	border-radius: 12px;
+	border: solid 1px black;
+	background-image: url('https://i1.wp.com/media.giphy.com/media/gx54W1mSpeYMg/giphy.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 99;
+	padding-top: 10px;
+	padding-bottom: 7.5px;
+	cursor: pointer;
+	transition: all .4s;
+}
+
+.trx-popup-staffRecruit:hover{
+	width: 322.5px;
+	left: 98%;
+}
+
+.trx-popup-staffRecruit h1{
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	-webkit-text-stroke: 0.4px black;
+	font-family: 'Minecraft Font';
+}
+
+.trx-popup-staffRecruit p{
+	text-align: center;
+	color: greenyellow;
+	-webkit-text-stroke: 0.4px black;
+	font-family: 'Raleway Regular';
+	background: rgba(0,0,0,0.4);
+}
+
+.trx-container{
+	position: fixed;
+	top: 95%;
+	left: 97.5%;
+	transform: translate(-97.5%, -95%);
+	width: 300px;
+	height: 80px;
+}
+
+.trx-container i{
+	position: absolute;
+	top: 0%;
+	left: 97.5%;
+	transform: translate(-97.5%, -0%);
+	font-size: 22px;
+	color: white;
+}
+
+.dsi-container{
+	position: relative;
+	height: fit-content;
+	width: 100%;
+	background: transparent;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-right: 100px;
+	padding-left: 100px;
+}
+
+.dsi-items{
+	position: relative;
+	height: 500px;
+	width: 330px;
+	background-size: cover;
+	background-position: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 50px;
+	margin-right: 50px;
+	border-radius: 6px;
+	font-family: 'Minecraft Font';
+	transition: all .2s ease;
+}
+
+.dsi-items h2{
+	text-align: center;
+	color: white;
+	background-color: rgba(0,0,0,0.6);
+	backdrop-filter: blur(10px);
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	font-size: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.dsi-label-details{
+	position: absolute;
+	top: 35%;
+	transform: translate(0, -35%);
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.dsi-label-details p{
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.dsi-items h1{
+	text-align: center;
+	color: yellowgreen;
+	position: absolute;
+	top: 80%;
+	transform: translate(0, -80%);
+	background-color: rgba(0,0,0,0.6);
+	width: 100%;
+	font-size: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.dsi-label-buy{
+	position: absolute;
+	background-color: rgba(0,0,0,0.6);
+	backdrop-filter: blur(10px);
+	top: 100%;
+	transform: translate(0, -100%);
+	width: 100%;
+	height: 60px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.dsi-label-buy button{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 1000px;
+	background: #181D21;
+	color: white;
+	border: none;
+	width: 130px;
+	height: 40px;
+	transition: all .3s ease;
+	font-size: 14px;
+}
+
+.dsi-label-buy button:hover{
+	background: #5c5c5c
+}

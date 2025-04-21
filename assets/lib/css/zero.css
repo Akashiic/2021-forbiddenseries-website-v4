@@ -1,0 +1,680 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    overflow-x: hidden;
+}
+
+body{
+    height: 100vh;
+}
+
+.main-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../assets/lib/img_remote/abxc.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -99;
+}
+
+
+.auth-window{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.auth-window form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 330px;
+    height: 340px;
+    background-color: rgba(255, 255, 255, 0.76);
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+}
+
+.auth-window form p{
+    font-family: 'Raleway Regular';
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: center;
+    margin: 60px;
+}
+
+.auth-window form input{
+    border: solid 1px black;
+    width: 90%;
+    height: 45px;
+    font-family: 'Raleway Regular';
+    font-size: 20px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+/*  -_-_____-_-  */
+
+.flash-main-container{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.panel-menu-flash{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 57.5px;
+    background-color: rgba(0,0,0,0.5);
+    transition: all .2s;
+    z-index: 99;
+}
+
+.panel-menu-flash h1{
+    position: relative;
+    text-align: center;
+    font-family: 'Raleway Regular';
+    color: white;
+    white-space: nowrap;
+    margin-left: 5px;
+    margin-right: 5px;
+    opacity: 0;
+    transition: all .1s;
+}
+
+.panel-menu-flash hr{
+    position: relative;
+    margin-top: 10px;
+    border-color: rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: all .1s;
+}
+
+.panel-flash-container ul li p{
+    position: absolute;
+    left: -100px;
+    opacity: 0;
+    transition: all .4s;
+}
+
+.panel-menu-flash:hover hr{
+    opacity: 1;
+}
+
+.panel-menu-flash:hover h1{
+    opacity: 1;
+}
+
+.panel-menu-flash:hover ul li p{
+    left: 60px;
+    opacity: 1;
+}
+
+.panel-menu-flash:hover ul li i{
+    margin-left: 15px;
+    transform: translate(0, 0);
+}
+
+.panel-menu-flash:hover{
+    width: 400px;
+}
+
+.panel-flash-container{
+    transition: .4s;
+}
+
+.panel-flash-container ul{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-right: 10px;
+}
+
+.panel-flash-container ul li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    font-family: 'Raleway Regular';
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    white-space: nowrap;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.panel-flash-container ul li:first-child{
+    margin-bottom: 30px;
+}
+
+.panel-flash-container ul li i{
+    margin-left: 50%;
+    transform: translate(-50%);
+    font-size: 24px;
+    z-index: 99;
+    transition: all .5s;
+}
+
+.panel-flash-container ul li:hover{
+    background: darkcyan;
+}
+
+.panel-flash-footer{
+    position: absolute;
+    top: 100%;
+    transform: translate(0, -100%);
+    width: 100%;
+    height: fit-content;
+    background: rgba(0,0,0,0.2);
+    border-top: solid 1px black;
+}
+
+.panel-flash-footer li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    font-family: 'Raleway Regular';
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    white-space: nowrap;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.panel-flash-footer li:hover{
+    background: darkred;
+}
+
+.panel-flash-footer li i{
+    margin-left: 50%;
+    transform: translate(-50%);
+    font-size: 24px;
+    z-index: 99;
+    transition: all .5s;
+}
+
+.panel-menu-flash:hover .panel-flash-footer li i{
+    margin-left: 15px;
+    transform: translate(0, 0);
+}
+
+.panel-flash-footer li p{
+    opacity: 0;
+    transition: 3s ease-in;
+    transition: .3s ease-out;
+    position: absolute;
+    left: -100px;
+    transition: all .4s;
+}
+
+.panel-menu-flash:hover .panel-flash-footer li p{
+    opacity: 1;
+    left: 60px;
+}
+
+/* ASDASDASDAS */
+
+.panel-page-flash{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.76);
+    backdrop-filter: blur(3px);
+    overflow-y: scroll;
+}
+
+/* asdasda */
+
+.ppflash-home-welcome{
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: 160px;
+    background-color: rgba(0,0,0,0.5);
+    animation: 1s ease-out 0s 1 slideview;
+}
+
+.ppflash-home-welcome h1, .ppflash-home-welcome p{
+    position: relative;
+    top: 40%;
+    transform: translate(0, -40%);
+    text-align: center;
+    font-family: 'Raleway Regular';
+    color: white;
+
+}
+
+@keyframes slideview{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.ppflash-home-graphic-container{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    animation: 1.5s ease-out 0s 1 slideview;
+}
+
+.ppflash-home-graphic{
+    margin-left: 50%;
+    transform: translate(-50%);
+    background: rgba(0,0,0,0.5);
+    height: 400px;
+    width: 310px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ppflash-home-graphic h1{
+    text-align: center;
+    backdrop-filter: blur(10px);
+    color: white;
+    font-family: 'Raleway Regular';
+}
+
+.ffi-xii{
+    font-size: 9px;
+    position: relative;
+    width: 90% !important;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.flash-table-panel-xi{
+    position: relative;
+    width: 90% !important;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.FFIXX-transactions{
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 140px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.FFIXX-transactions h1{
+    color: white;
+    font-family: 'Raleway Regular';
+    text-align: center;
+}
+
+.FFIXX-transactions p{
+    color: white;
+    font-family: 'Raleway Regular';
+    text-align: center;
+}
+
+.ppflash-transaction{
+    animation: 1s ease-out 0s 1 slideviewtransaction;
+}
+
+@keyframes slideviewtransaction{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.button-edit-user{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 4px;
+    width: 80%;
+    height: 30px;
+    border: none;
+    background-color: greenyellow;
+    color: white;
+}
+
+.button-edit-user:active{
+    background-color: rgb(104, 155, 29);
+}
+
+.button-edit-resize{
+    width: 70px;
+}
+
+.table-perm-master{
+    background: linear-gradient(-90deg, #212529, rgb(151, 1, 1), #212529);
+    animation: viewLevelInterfaceColor 3s ease infinite;
+    color: rgb(255, 88, 66);
+    -webkit-text-stroke: 0.4px black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-size: 400% 400%;
+    transition: 3s;
+}
+
+@keyframes viewLevelInterfaceColor{
+
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+
+}
+
+.ppflash-index{
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ppflash-index h1{
+    color: rgba(255, 255, 255, 0.774);
+}
+
+.flash-searchbar{
+    background-color: transparent !important;
+}
+
+.flash-searchbar-button{
+    width: 90px !important;
+}
+
+.custom-table-flash td img{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.flash-table-status{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90px;
+    height: 30px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 4px;
+}
+
+.flash-table-status p{
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+}
+
+.fts-accepted{
+    background-color: greenyellow;
+}
+
+.fts-cancelled{
+    background-color: rgb(255, 47, 47);
+}
+
+.fts-rejected{
+    background-color: rgb(255, 60, 0);
+}
+
+.fts-pending{
+    background-color: rgb(145, 145, 145);
+}
+
+.flash-panel-news-autor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.table-custom-border{
+    border-radius: 6px 6px;
+}
+
+.custom-table-flash th img{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
+
+.flash-autor-news{
+    display: flex;
+    flex-direction: row;
+}
+
+.button-resize{
+    width: 100px;
+}
+
+
+.ipc-panel-onlinePlayers{
+    position: relative;
+    overflow: hidden;
+}
+
+.ipc-p-op-span-container{
+    font-family: 'Minecraft Font';
+    color: white;
+}
+
+#interact-fluid-panel{
+    font-size: 150px;
+    text-align: center;
+    padding-left: 15px;
+    color: white;
+}
+
+.ipc-p-op-span-container p{
+    color: yellowgreen;
+    font-size: 30px;
+    text-align: center;
+}
+
+.ppflash-home-graphic-details{
+    display: flex;
+    flex-direction: column;
+    animation: 1.5s ease-out 0s 1 slideview;
+    width: 60%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.ppflash-graphic-child-details{
+
+    background: rgba(0,0,0,0.5);
+    height: 400px;
+    width: 680px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.ppflash-graphic-child-details h1{
+    text-align: center;
+    backdrop-filter: blur(10px);
+    color: white;
+    font-family: 'Raleway Regular';
+}
+
+.ppflash-container-all-graphic{
+    display: flex;
+    flex-direction: row;
+}
+
+.ppflash-container-all-graphic *{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.ppflash-index *, .panel-page-flash *{
+    overflow: hidden;
+}
+
+.series-xi{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90% !important;
+}
+
+.eixo-horizontal-backdrop{
+    position: relative;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 25px;
+}
+
+.eixo-container{
+    position: relative;
+    padding: 5px;
+    float: right;
+    margin-right: 15px;
+}
+
+/* A */
+
+.modal-cupom{
+    height: 300px !important;
+}
+
+/*AKASHIC MODAL*/
+
+.akashic-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    overflow-y: visible !important;
+}
+
+.akashic-modal *{
+    overflow: hidden;
+}
+
+.akashic-shadow-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+}
+
+.akashic-modal-container{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 460px;
+    background-color: white;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+}
+
+.akashic-modal-container *{
+    margin: 0;
+    padding: 0;
+}
+
+.akashic-modal-container h1{
+    position: relative;
+    text-align: center;
+    margin-bottom: 7.5px;
+}
+
+.akashic-modal-container form{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.akashic-modal-container form ul{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translate(0, -60%);
+}
+
+.akashic-modal-container form ul li input, .akashic-modal-container form ul li textarea, .akashic-modal-container form ul li select{
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    height: 40px;
+}
+
+#product-shop-info{
+    resize: none;
+    height: 90px !important;
+}
+
+.hr-akashic{
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    height: 1px;
+}
+
+.product-container-footer{
+    position: absolute;
+    top: 100%;
+    transform: translate(0, -100%);
+    width: 100%;
+    right: 0.5px !important;
+}
+
+.button-conclusion-product{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.button-conclusion-product button{
+    margin-left: 4px;
+    margin-right: 4px;
+}
